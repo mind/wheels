@@ -10,12 +10,15 @@ pip --no-cache-dir install https://github.com/mind/wheels/releases/download/{REL
 
 The wheels can be found in the [releases page](https://github.com/mind/wheels/releases).
 
-Please note that your machine needs to have a relatively new CPU (or nVidia GPU if you use the GPU version) to be compatible with the wheels. TensorFlow versions of 1.2.1 and above use CuDNN 6, whereas 1.1 and 1.2 use CuDNN 5.1.
-
 ## TensorFlow
 
-Version | Python | Architecture | Link
---------|--------|--------------|-----
+Please note that your machine needs to have a relatively new CPU (or nVidia GPU if you use the GPU version) to be compatible with the wheels below. TensorFlow versions of 1.2.1 and above use CuDNN 6, whereas 1.1 and 1.2 use CuDNN 5.1.
+
+Version | Python | Arch | Link
+--------|--------|------|-----
 1.1 | 2.7 | CPU | https://github.com/mind/wheels/releases/download/tf1.1-cpu/tensorflow-1.1.0-cp27-cp27mu-linux_x86_64.whl
 1.1 | 3.5 | CPU | https://github.com/mind/wheels/releases/download/tf1.1-cpu/tensorflow-1.1.0-cp35-cp35m-linux_x86_64.whl
 1.1 | 3.6 | CPU | https://github.com/mind/wheels/releases/download/tf1.1-cpu/tensorflow-1.1.0-cp36-cp36m-linux_x86_64.whl
+1.1 | 2.7 | GPU | https://github.com/mind/wheels/releases/download/tf1.1-gpu/tensorflow-1.1.0-cp27-cp27mu-linux_x86_64.whl
+1.1 | 3.5 | GPU | https://github.com/mind/wheels/releases/download/tf1.1-gpu/tensorflow-1.1.0-cp35-cp35m-linux_x86_64.whl
+1.1 | 3.6 | GPU | https://github.com/mind/wheels/releases/download/tf1.1-gpu/tensorflow-1.1.0-cp36-cp36m-linux_x86_64.whl
