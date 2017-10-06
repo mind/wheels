@@ -1,8 +1,8 @@
-# Wheels
+# TensorFlow Optimized Wheels
 
 Custom builds for TensorFlow with platform optimizations, including SSE, AVX and FMA.
 
-These wheels are built for use on [TinyMind](https://www.tinymind.ai), the cloud machine learning platform. If you want to install them on your own Linux box, you can do so with:
+These wheels are built for use on [TinyMind](http://www.tinymind.com), the cloud machine learning platform. If you want to install them on your own Linux box (Ubuntu 16.04 LTS), you can do so with:
 
 ```sh
 # RELEASE is the git tag like tf1.1-cpu. WHEEL is the full wheel name.
@@ -15,9 +15,9 @@ If you want a shorter URL, use:
 pip --no-cache-dir install http://wheels.tinymind.org/{RELEASE}/{WHEEL}
 ```
 
-The wheels can be found in the [releases page](https://github.com/mind/wheels/releases).
+The list of all wheels can be found in the [releases page](https://github.com/mind/wheels/releases).
 
-## TensorFlow
+## Versions
 
 The table below lists versions you will most likely use. However, be sure to check out the [releases page](https://github.com/mind/wheels/releases) as we are adding other builds (debug, XLA, etc) to the collection. Need something or a wheel doesn't work for you? File an issue.
 
@@ -47,3 +47,6 @@ Version | Python | Arch | Link
 1.3 | 2.7 | GPU | https://github.com/mind/wheels/releases/download/tf1.3-gpu/tensorflow-1.3.0-cp27-cp27mu-linux_x86_64.whl
 1.3 | 3.5 | GPU | https://github.com/mind/wheels/releases/download/tf1.3-gpu/tensorflow-1.3.0-cp35-cp35m-linux_x86_64.whl
 1.3 | 3.6 | GPU | https://github.com/mind/wheels/releases/download/tf1.3-gpu/tensorflow-1.3.0-cp36-cp36m-linux_x86_64.whl
+1.3.1 | 2.7 | CPU | https://github.com/mind/wheels/releases/download/tf1.3.1-cpu/tensorflow-1.3.1-cp27-cp27mu-linux_x86_64.whl
+1.3.1 | 3.5 | CPU | https://github.com/mind/wheels/releases/download/tf1.3.1-cpu/tensorflow-1.3.1-cp35-cp35m-linux_x86_64.whl
+1.3.1 | 3.6 | CPU | https://github.com/mind/wheels/releases/download/tf1.3.1-cpu/tensorflow-1.3.1-cp36-cp36m-linux_x86_64.whl
