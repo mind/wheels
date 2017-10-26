@@ -19,11 +19,11 @@ The list of all wheels can be found in the [releases page](https://github.com/mi
 
 ## Versions
 
-The table below lists versions you will most likely use. However, be sure to check out the [releases page](https://github.com/mind/wheels/releases) as we are adding other builds (debug, XLA, etc) to the collection. Need something or a wheel doesn't work for you? File an issue. 
+The table below lists versions you will most likely use. However, be sure to check out the [releases page](https://github.com/mind/wheels/releases) as we are adding other builds (debug, XLA, MPI, etc) to the collection. Need something or a wheel doesn't work for you? File an issue. 
 
 Please note that your machine needs to have a relatively new Intel CPU (and nvidia GPU if you use the GPU version) to be compatible with the wheels below. If the hardware is not up-to-date, the wheels will not work.
 
-TensorFlow versions of 1.2.1 and above use CuDNN 6, whereas 1.1 and 1.2 use CuDNN 5.1. Additionally, GPU builds for version 1.3 and above use MPICH (for MPI support). See the section below for more information.
+TensorFlow versions of 1.2.1 and above use CuDNN 6, whereas 1.1 and 1.2 use CuDNN 5.1. See the section below for more information.
 
 Version | Python | Arch | Link
 --------|--------|------|-----
@@ -58,7 +58,7 @@ Version | Python | Arch | Link
 
 ## Help!
 
-This section contains tips for debugging your setup. Seriously though, try [TinyMind](https://www.tinymind.com) out and you will never need to waste time debugging again. We also have [Docker images](https://hub.docker.com/r/tinymind/tensorflow/) that you can use on your own machines.
+This section contains tips for debugging your setup. Seriously though, try [TinyMind](https://www.tinymind.com) out and you will never need to waste time debugging again. We also have [Docker images](https://hub.docker.com/r/tinymind/tensorflow/) that you can use on your own machines. If this section doesn't solve your problem, be sure to file an issue.
 
 ### CUDA
 
@@ -73,4 +73,4 @@ echo 'export LD_LIBRARY_PATH=/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
 
 ### MPI
 
-Using TensorFlow 1.3+ with GPU and it complains about MPI? Run `sudo apt-get install mpich`.
+Using a wheel with MPI support? Be sure to run `sudo apt-get install mpich`.
