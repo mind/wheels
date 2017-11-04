@@ -19,7 +19,7 @@ The list of all wheels can be found in the [releases page](https://github.com/mi
 
 ## Versions
 
-The table below lists versions you will most likely use. However, be sure to check out the [releases page](https://github.com/mind/wheels/releases) as we are adding other builds (debug, XLA, MPI, etc) to the collection. Need something or a wheel doesn't work for you? File an issue. 
+The table below lists versions you will most likely use. However, be sure to check out the [releases page](https://github.com/mind/wheels/releases) as we are adding other builds (debug, XLA, MPI, etc) to the collection. Need something or a wheel doesn't work for you? File an issue.
 
 Please note that your machine needs to have a relatively new Intel CPU (and nvidia GPU if you use the GPU version) to be compatible with the wheels below. If the hardware is not up-to-date, the wheels will not work.
 
@@ -55,6 +55,9 @@ Version | Python | Arch | Link
 1.3.1 | 2.7 | GPU | https://github.com/mind/wheels/releases/download/tf1.3.1-gpu/tensorflow-1.3.1-cp27-cp27mu-linux_x86_64.whl
 1.3.1 | 3.5 | GPU | https://github.com/mind/wheels/releases/download/tf1.3.1-gpu/tensorflow-1.3.1-cp35-cp35m-linux_x86_64.whl
 1.3.1 | 3.6 | GPU | https://github.com/mind/wheels/releases/download/tf1.3.1-gpu/tensorflow-1.3.1-cp36-cp36m-linux_x86_64.whl
+1.4 | 2.7 | CPU | https://github.com/mind/wheels/releases/download/tf1.4-cpu/tensorflow-1.4.0-cp27-cp27mu-linux_x86_64.whl
+1.4 | 3.5 | CPU | https://github.com/mind/wheels/releases/download/tf1.4-cpu/tensorflow-1.4.0-cp35-cp35m-linux_x86_64.whl
+1.4 | 3.6 | CPU | https://github.com/mind/wheels/releases/download/tf1.4-cpu/tensorflow-1.4.0-cp36-cp36m-linux_x86_64.whl
 
 ## Help!
 
