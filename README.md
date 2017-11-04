@@ -95,6 +95,24 @@ sudo apt-get update
 sudo apt-get install cuda
 ```
 
+Make sure that CUDA-related environment variables are set properly:
+
+```sh
+echo 'export CUDA_HOME=/usr/local/cuda' >> ~/.bashrc
+echo 'export PATH=$PATH:$CUDA_HOME/bin' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_HOME/lib64' >> ~/.bashrc
+. ~/.bashrc
+```
+
+[Download the correct cuDNN](https://developer.nvidia.com/cudnn) and install it as follows:
+
+```sh
+# The cuDNN tar file.
+tar xzvf cudnn-9.0-linux-x64-v7.0.tgz
+sudo cp cuda/lib64/* /usr/local/cuda/lib64/
+sudo cp cuda/include/cudnn.h /usr/local/cuda/include/
+```
+
 Missing `libcupti` library? Install it and add it to your `PATH`.
 
 ```sh
