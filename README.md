@@ -1,6 +1,6 @@
 # TensorFlow Optimized Wheels
 
-Custom builds for TensorFlow with platform optimizations, including SSE, AVX and FMA. If you've seen messages like the following, you've come to the right place.
+Custom builds for TensorFlow with platform optimizations, including SSE, AVX and FMA. If you are seeing messages like the following with the stock `pip install tensorflow`, you've come to the right place.
 
 ```
 The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
