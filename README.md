@@ -1,6 +1,12 @@
 # TensorFlow Optimized Wheels
 
-Custom builds for TensorFlow with platform optimizations, including SSE, AVX and FMA.
+Custom builds for TensorFlow with platform optimizations, including SSE, AVX and FMA. If you've seen messages like the following, you've come to the right place.
+
+```
+The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+...
+```
 
 These wheels are built for use on [TinyMind](https://www.tinymind.com), the cloud machine learning platform. If you want to install them on your own Linux box (Ubuntu 16.04 LTS), you can do so with:
 
@@ -21,9 +27,9 @@ The list of all wheels can be found in the [releases page](https://github.com/mi
 
 The table below lists versions you will most likely use. However, be sure to check out the [releases page](https://github.com/mind/wheels/releases) as we are adding other builds (debug, XLA, MPI, etc) to the collection. Need something or a wheel doesn't work for you? File an issue.
 
-Please note that your machine needs to have a relatively new Intel CPU (and nvidia GPU if you use the GPU version) to be compatible with the wheels below. If the hardware is not up-to-date, the wheels will not work.
+Please note that your machine needs to have a relatively new Intel CPU (and Nvidia GPU if you use the GPU version) to be compatible with the wheels below. If the hardware is not up-to-date, the wheels will not work.
 
-TensorFlow versions of 1.2.1 and above use CuDNN 6, whereas 1.1 and 1.2 use CuDNN 5.1. See the section below for more information.
+See the section below for information about CUDA support.
 
 Version | Python | Arch | Link
 --------|--------|------|-----
@@ -65,7 +71,29 @@ This section contains tips for debugging your setup. Seriously though, try [Tiny
 
 ### CUDA
 
-Make sure you have CUDA 8 installed. TensorFlow < 1.4 doesn't work with CUDA 9, the current version. Instead of `sudo apt-get install cuda`, do `sudo apt-get install cuda-8-0`.
+Different TensorFlow versions support/require different CUDA versions:
+
+TF Version | CUDA | cuDNN
+-----------|------|------
+1.1, 1.2 | 8.0 | 5.1
+1.2.1-1.3.1 | 8.0 | 6.0
+1.4 | 9.0 | 7.0
+
+In particular, TensorFlow < 1.4 doesn't work with CUDA 9, the current version. Instead of `sudo apt-get install cuda`, do `sudo apt-get install cuda-8-0`.
+
+```sh
+# Install CUDA 8
+curl -O http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
+sudo dpkg -i cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
+sudo apt-get update
+sudo apt-get install cuda-8-0
+
+# Install CUDA 9
+curl -O http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_9.0.176-1_amd64.deb
+sudo dpkg -i cuda-repo-ubuntu1604_9.0.176-1_amd64.deb
+sudo apt-get update
+sudo apt-get install cuda
+```
 
 Missing `libcupti` library? Install it and add it to your `PATH`.
 
