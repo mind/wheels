@@ -36,12 +36,9 @@ TF Version | Builds
 1.3.1 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.3.1-cpu), [CPU Debug](https://github.com/mind/wheels/releases/tag/tf1.3-cpu-debug), [GPU](https://github.com/mind/wheels/releases/tag/tf1.3.1-gpu), [GPU with MPI](https://github.com/mind/wheels/releases/tag/tf1.3-gpu-mpi)
 1.4 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.4-cpu), [GPU with CUDA 9](https://github.com/mind/wheels/releases/tag/tf1.4-gpu-cuda9)
 
-
-Need something or a wheel doesn't work for you? File an issue.
-
 Please note that your machine needs to have a relatively new Intel CPU (and Nvidia GPU if you use the GPU version) to be compatible with the wheels below. If the hardware is not up-to-date, the wheels will not work.
 
-See the section below for information about CUDA support.
+Wheels you will most likely need are listed below. Need something or a wheel doesn't work for you? File an issue.
 
 Version | Python | Arch | Link
 --------|--------|------|-----
