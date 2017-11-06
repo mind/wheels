@@ -25,7 +25,7 @@ The list of all wheels can be found in the [releases page](https://github.com/mi
 
 ## Versions
 
-Click on the links below to jump to specific release versions:
+Click on the links below to jump to specific release versions. Again, they are built for Ubuntu 16.04 LTS.
 
 TF Version | Builds
 -----------|-------
