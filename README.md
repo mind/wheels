@@ -25,7 +25,19 @@ The list of all wheels can be found in the [releases page](https://github.com/mi
 
 ## Versions
 
-The table below lists versions you will most likely use. However, be sure to check out the [releases page](https://github.com/mind/wheels/releases) as we are adding other builds (debug, XLA, MPI, etc) to the collection. Need something or a wheel doesn't work for you? File an issue.
+Click on the links below to jump to specific release versions:
+
+TF Version | Builds
+-----------|-------
+1.1 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.1-cpu), [GPU](https://github.com/mind/wheels/releases/tag/tf1.1-gpu)
+1.2 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.2-cpu), [GPU (Python 3.6 only)](https://github.com/mind/wheels/releases/tag/tf1.2-gpu)
+1.2.1 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.2.1-cpu), [GPU](https://github.com/mind/wheels/releases/tag/tf1.2.1-gpu)
+1.3 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.3-cpu), [GPU with MPI](https://github.com/mind/wheels/releases/tag/tf1.3-gpu)
+1.3.1 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.3.1-cpu), [CPU Debug](https://github.com/mind/wheels/releases/tag/tf1.3-cpu-debug), [GPU](https://github.com/mind/wheels/releases/tag/tf1.3.1-gpu), [GPU with MPI](https://github.com/mind/wheels/releases/tag/tf1.3-gpu-mpi)
+1.4 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.4-cpu), [GPU with CUDA 9](https://github.com/mind/wheels/releases/tag/tf1.4-gpu-cuda9)
+
+
+Need something or a wheel doesn't work for you? File an issue.
 
 Please note that your machine needs to have a relatively new Intel CPU (and Nvidia GPU if you use the GPU version) to be compatible with the wheels below. If the hardware is not up-to-date, the wheels will not work.
 
