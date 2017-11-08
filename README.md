@@ -82,11 +82,11 @@ This section contains tips for debugging your setup. Seriously though, try [Tiny
 
 Different TensorFlow versions support/require different CUDA versions:
 
-TF Version | CUDA | cuDNN
------------|------|------
-1.1, 1.2 | 8.0 | 5.1
-1.2.1-1.3.1 | 8.0 | 6.0
-1.4 | 9.0 | 7.0
+TF Version | CUDA | cuDNN | Compute Capability
+-----------|------|-------|-------------------
+1.1, 1.2 | 8.0 | 5.1 | 3.7 (K80)
+1.2.1-1.3.1 | 8.0 | 6.0 | 3.7
+1.4 | 9.0 | 7.0 | 3.7, 6.0 (P100), 7.0 (V100)
 
 In particular, TensorFlow < 1.4 doesn't work with CUDA 9, the current version. Instead of `sudo apt-get install cuda`, do `sudo apt-get install cuda-8-0`.
 
