@@ -34,7 +34,7 @@ TF Version | Builds
 1.2.1 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.2.1-cpu), [GPU](https://github.com/mind/wheels/releases/tag/tf1.2.1-gpu)
 1.3 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.3-cpu), [GPU with MPI](https://github.com/mind/wheels/releases/tag/tf1.3-gpu)
 1.3.1 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.3.1-cpu), [CPU Debug](https://github.com/mind/wheels/releases/tag/tf1.3-cpu-debug), [GPU](https://github.com/mind/wheels/releases/tag/tf1.3.1-gpu), [GPU with MPI](https://github.com/mind/wheels/releases/tag/tf1.3-gpu-mpi)
-1.4 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.4-cpu), [CPU Debug](https://github.com/mind/wheels/releases/tag/tf1.4-cpu-debug), [GPU with CUDA 9](https://github.com/mind/wheels/releases/tag/tf1.4-gpu-cuda9)
+1.4 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.4-cpu), [CPU Debug](https://github.com/mind/wheels/releases/tag/tf1.4-cpu-debug), [GPU](https://github.com/mind/wheels/releases/tag/tf1.4-gpu), [GPU with CUDA 9, Compute 3.7](https://github.com/mind/wheels/releases/tag/tf1.4-gpu-cuda9-37), [GPU with CUDA 9, Compute 3.7, 6.0, 7.0]((https://github.com/mind/wheels/releases/tag/tf1.4-gpu-cuda9)
 
 Please note that your machine needs to have a relatively new Intel CPU (and Nvidia GPU if you use the GPU version) to be compatible with the wheels below. If the hardware is not up-to-date, the wheels will not work.
 
@@ -73,6 +73,8 @@ Version | Python | Arch | Link
 1.4 | 2.7 | CPU | https://github.com/mind/wheels/releases/download/tf1.4-cpu/tensorflow-1.4.0-cp27-cp27mu-linux_x86_64.whl
 1.4 | 3.5 | CPU | https://github.com/mind/wheels/releases/download/tf1.4-cpu/tensorflow-1.4.0-cp35-cp35m-linux_x86_64.whl
 1.4 | 3.6 | CPU | https://github.com/mind/wheels/releases/download/tf1.4-cpu/tensorflow-1.4.0-cp36-cp36m-linux_x86_64.whl
+1.4 | 2.7 | GPU | https://github.com/mind/wheels/releases/download/tf1.4-gpu/tensorflow-1.4.0-cp27-cp27mu-linux_x86_64.whl
+1.4 | 3.5 | GPU | https://github.com/mind/wheels/releases/download/tf1.4-gpu/tensorflow-1.4.0-cp35-cp35m-linux_x86_64.whl
 
 ## Help!
 
