@@ -29,7 +29,7 @@ The list of all wheels can be found in the [releases page](https://github.com/mi
 
 ## Versions
 
-Click on the links below to jump to specific release versions. Again, they are built for Ubuntu 16.04 LTS.
+Click on the links below to jump to specific release versions. Again, they are built for Ubuntu 16.04 LTS unless otherwise noted.
 
 TF Version | Builds
 -----------|-------
@@ -42,7 +42,7 @@ TF Version | Builds
 
 Please note that your machine needs to have a relatively new Intel CPU (and Nvidia GPU if you use the GPU version) to be compatible with the wheels below. If the hardware is not up-to-date, the wheels will not work.
 
-Wheels you will most likely need are listed below. Need something or a wheel doesn't work for you? File an issue.
+Wheels you will most likely need are listed below. Need something or a wheel doesn't work for you? File an issue. (Unfortunately, we won't be able to accommodate for requests for Windows wheels, as we don't have Windows machines ourselves.)
 
 Version | Python | Arch | Link
 --------|--------|------|-----
