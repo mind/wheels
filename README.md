@@ -31,7 +31,7 @@ The list of all wheels can be found in the [releases page](https://github.com/mi
 
 Click on the links below to jump to specific release versions. Again, they are built for Ubuntu 16.04 LTS unless otherwise noted.
 
-TF Version | Builds
+TF | Builds
 -----------|-------
 1.1 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.1-cpu), [GPU](https://github.com/mind/wheels/releases/tag/tf1.1-gpu)
 1.2 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.2-cpu), [GPU (Python 3.6 only)](https://github.com/mind/wheels/releases/tag/tf1.2-gpu)
@@ -89,7 +89,7 @@ This section contains tips for debugging your setup. Seriously though, try [Tiny
 
 Different TensorFlow versions support/require different CUDA versions:
 
-TF Version | CUDA | cuDNN | Compute Capability
+TF | CUDA | cuDNN | Compute Capability
 -----------|------|-------|-------------------
 1.1, 1.2 | 8.0 | 5.1 | 3.7 (K80)
 1.2.1-1.3.1 | 8.0 | 6.0 | 3.7
