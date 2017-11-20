@@ -93,9 +93,9 @@ TF | CUDA | cuDNN | Compute Capability
 -----------|------|-------|-------------------
 1.1, 1.2 | 8.0 | 5.1 | 3.7 (K80)
 1.2.1-1.3.1 | 8.0 | 6.0 | 3.7
-1.4 | 9.0 | 7.0 | 3.7, 6.0 (P100), 7.0 (V100)
+1.4 | 8.0/9.0 | 6.0/7.0 | 3.7, 6.0 (P100), 7.0 (V100)
 
-In particular, TensorFlow < 1.4 doesn't work with CUDA 9, the current version. Instead of `sudo apt-get install cuda`, do `sudo apt-get install cuda-8-0`.
+TensorFlow < 1.4 doesn't work with CUDA 9, the current version. Instead of `sudo apt-get install cuda`, you need to do `sudo apt-get install cuda-8-0`. CUDA 8 variants of TensorFlow 1.4 go with cuDNN 6.0, and CUDA 9 variants go with cuDNN 7.0.
 
 ```sh
 # Install CUDA 8
@@ -135,6 +135,14 @@ Missing `libcupti` library? Install it and add it to your `PATH`.
 ```sh
 sudo apt-get install libcupti-dev
 echo 'export LD_LIBRARY_PATH=/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
+```
+
+### MKL
+
+MKL is Intel's deep learning kernal library. If you don't have it, follow the [instructions here](https://github.com/01org/mkl-dnn) to install it. The `make install` step may require `sudo`. After installing, add `/usr/local/lib` (or your custom install path) to `LD_LIBRARY_PATH`:
+
+```sh
+echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib' >> ~/.bashrc
 ```
 
 ### MPI
