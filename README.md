@@ -38,7 +38,7 @@ TF | Builds
 1.2.1 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.2.1-cpu), [GPU](https://github.com/mind/wheels/releases/tag/tf1.2.1-gpu)
 1.3 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.3-cpu), [GPU with MPI](https://github.com/mind/wheels/releases/tag/tf1.3-gpu)
 1.3.1 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.3.1-cpu), [CPU Debug](https://github.com/mind/wheels/releases/tag/tf1.3-cpu-debug), [GPU](https://github.com/mind/wheels/releases/tag/tf1.3.1-gpu), [GPU with MPI](https://github.com/mind/wheels/releases/tag/tf1.3-gpu-mpi)
-1.4 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.4-cpu), [CPU Debug](https://github.com/mind/wheels/releases/tag/tf1.4-cpu-debug), [CPU macOS](https://github.com/mind/wheels/releases/tag/tf1.4-cpu-mac), [GPU](https://github.com/mind/wheels/releases/tag/tf1.4-gpu), [GPU with CUDA 9](https://github.com/mind/wheels/releases/tag/tf1.4-gpu-cuda9-37), [GPU with CUDA 9 for Compute 3.7/6.0/7.0](https://github.com/mind/wheels/releases/tag/tf1.4-gpu-cuda9), [GPU with CUDA 9 (generic)](https://github.com/mind/wheels/releases/tag/tf1.4-gpu-cuda9-generic)
+1.4 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.4-cpu), [CPU Debug](https://github.com/mind/wheels/releases/tag/tf1.4-cpu-debug), [CPU macOS](https://github.com/mind/wheels/releases/tag/tf1.4-cpu-mac), GPU ([CUDA 8](https://github.com/mind/wheels/releases/tag/tf1.4-gpu), [CUDA 9 for Compute 3.7](https://github.com/mind/wheels/releases/tag/tf1.4-gpu-cuda9-37), [CUDA 9 for Compute 3.7/6.0/7.0](https://github.com/mind/wheels/releases/tag/tf1.4-gpu-cuda9), [CUDA 9 generic](https://github.com/mind/wheels/releases/tag/tf1.4-gpu-cuda9-generic), [CUDA 9 without MKL](https://github.com/mind/wheels/releases/tag/tf1.4-gpu-cuda9-nomkl))
 
 Please note that your machine needs to have a relatively new Intel CPU (and Nvidia GPU if you use the GPU version) to be compatible with the wheels below. If the hardware is not up-to-date, the wheels will not work.
 
@@ -144,6 +144,10 @@ MKL is Intel's deep learning kernal library. If you don't have it, follow the [i
 ```sh
 echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib' >> ~/.bashrc
 ```
+
+### Glibc 2.23
+
+Please note that Ubuntu 16.04 LTS is the intended environment. If you have an old OS, you may run into issues with old glibc versions. You may want to check out [discussions here](https://github.com/mind/wheels/issues/7) to see if they would help.
 
 ### MPI
 
