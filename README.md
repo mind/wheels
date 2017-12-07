@@ -139,9 +139,17 @@ echo 'export LD_LIBRARY_PATH=/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
 
 ### MKL
 
-MKL is Intel's deep learning kernal library. If you don't have it, follow the [instructions here](https://github.com/01org/mkl-dnn) to install it. The `make install` step may require `sudo`. After installing, add `/usr/local/lib` (or your custom install path) to `LD_LIBRARY_PATH`:
+MKL is [Intel's deep learning kernal library](https://github.com/01org/mkl-dnn), which makes training neural nets on CPU much faster. If you don't have it, install it like the following:
 
 ```sh
+# If you don't have cmake
+sudo apt install cmake
+
+git clone https://github.com/01org/mkl-dnn.git
+cd mkl-dnn/scripts && ./prepare_mkl.sh && cd ..
+mkdir -p build && cd build && cmake .. && make
+sudo make install
+
 echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib' >> ~/.bashrc
 ```
 
