@@ -19,12 +19,6 @@ These wheels are built for use on [TinyMind](https://www.tinymind.com), the clou
 pip --no-cache-dir install https://github.com/mind/wheels/releases/download/{RELEASE}/{WHEEL}
 ```
 
-If you want a shorter URL, use:
-
-```sh
-pip --no-cache-dir install http://wheels.tinymind.org/{RELEASE}/{WHEEL}
-```
-
 The list of all wheels can be found in the [releases page](https://github.com/mind/wheels/releases).
 
 ## Versions
@@ -40,7 +34,7 @@ TF | Builds
 1.3.1 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.3.1-cpu), [CPU Debug](https://github.com/mind/wheels/releases/tag/tf1.3-cpu-debug), [GPU](https://github.com/mind/wheels/releases/tag/tf1.3.1-gpu), [GPU with MPI](https://github.com/mind/wheels/releases/tag/tf1.3-gpu-mpi)
 1.4 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.4-cpu), [CPU Debug](https://github.com/mind/wheels/releases/tag/tf1.4-cpu-debug), [CPU macOS](https://github.com/mind/wheels/releases/tag/tf1.4-cpu-mac), GPU ([CUDA 8](https://github.com/mind/wheels/releases/tag/tf1.4-gpu), [CUDA 9 for Compute 3.7](https://github.com/mind/wheels/releases/tag/tf1.4-gpu-cuda9-37), [CUDA 9 for Compute 3.7/6.0/7.0](https://github.com/mind/wheels/releases/tag/tf1.4-gpu-cuda9), [CUDA 9 generic](https://github.com/mind/wheels/releases/tag/tf1.4-gpu-cuda9-generic), [CUDA 9 without MKL](https://github.com/mind/wheels/releases/tag/tf1.4-gpu-cuda9-nomkl))
 1.4.1 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.4.1-cpu), GPU ([CUDA 8](https://github.com/mind/wheels/releases/tag/tf1.4.1-gpu), [CUDA 9](https://github.com/mind/wheels/releases/tag/tf1.4.1-gpu-cuda9), [CUDA 9.1](https://github.com/mind/wheels/releases/tag/tf1.4.1-gpu-cuda91))
-1.5 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.5-cpu)
+1.5 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.5-cpu), GPU ([CUDA 9.1](https://github.com/mind/wheels/releases/tag/tf1.5-gpu-cuda91), [CUDA 9.1 without MKL](https://github.com/mind/wheels/releases/tag/tf1.5-gpu-cuda91-nomkl))
 
 Please note that your machine needs to have a relatively new Intel CPU (and Nvidia GPU if you use the GPU version) to be compatible with the wheels below. If the hardware is not up-to-date, the wheels will not work.
 
@@ -84,6 +78,12 @@ Version | Python | Arch | Link
 1.4 | 2.7 | GPU | https://github.com/mind/wheels/releases/download/tf1.4-gpu/tensorflow-1.4.0-cp27-cp27mu-linux_x86_64.whl
 1.4 | 3.5 | GPU | https://github.com/mind/wheels/releases/download/tf1.4-gpu/tensorflow-1.4.0-cp35-cp35m-linux_x86_64.whl
 1.4 | 3.6 | GPU | https://github.com/mind/wheels/releases/download/tf1.4-gpu/tensorflow-1.4.0-cp36-cp36m-linux_x86_64.whl
+1.4.1 | 2.7 | CPU | https://github.com/mind/wheels/releases/download/tf1.4.1-cpu/tensorflow-1.4.1-cp27-cp27mu-linux_x86_64.whl
+1.4.1 | 3.5 | CPU | https://github.com/mind/wheels/releases/download/tf1.4.1-cpu/tensorflow-1.4.1-cp35-cp35m-linux_x86_64.whl
+1.4.1 | 3.6 | CPU | https://github.com/mind/wheels/releases/download/tf1.4.1-cpu/tensorflow-1.4.1-cp36-cp36m-linux_x86_64.whl
+1.4.1 | 2.7 | GPU | https://github.com/mind/wheels/releases/download/tf1.4.1-gpu/tensorflow-1.4.1-cp27-cp27mu-linux_x86_64.whl
+1.4.1 | 3.5 | GPU | https://github.com/mind/wheels/releases/download/tf1.4.1-gpu/tensorflow-1.4.1-cp35-cp35m-linux_x86_64.whl
+1.4.1 | 3.6 | GPU | https://github.com/mind/wheels/releases/download/tf1.4.1-gpu/tensorflow-1.4.1-cp36-cp36m-linux_x86_64.whl
 
 ## Help!
 
@@ -99,6 +99,7 @@ TF | CUDA | cuDNN | Compute Capability
 1.2.1-1.3.1 | 8.0 | 6.0 | 3.7
 1.4 | 8.0/9.0 | 6.0/7.0 | 3.7, 6.0 (P100), 7.0 (V100)
 1.4.1 | 8.0/9.0/9.1 | 6.0/7.0 | 3.7, 6.0, 7.0
+1.5 | 9.0/9.1 | 7.0 | 3.7, 6.0, 7.0
 
 TensorFlow < 1.4 doesn't work with CUDA 9, the current version. Instead of `sudo apt-get install cuda`, you need to do `sudo apt-get install cuda-8-0`. CUDA 8 variants of TensorFlow 1.4 go with cuDNN 6.0, and CUDA 9 variants go with cuDNN 7.0.
 
