@@ -38,7 +38,11 @@ TF | Builds
 
 Please note that your machine needs to have a relatively new Intel CPU (and Nvidia GPU if you use the GPU version) to be compatible with the wheels below. If the hardware is not up-to-date, the wheels will not work.
 
-Wheels for TensorFlow 1.4.1 and above contain support for GCP, S3 and Hadoop.
+Wheels for TensorFlow 1.4.1 and above contain support for GCP, S3 and Hadoop. Compilation flags include:
+
+```
+--config=opt --config=cuda --cxxopt=-D_GLIBCXX_USE_CXX11_ABI=0 --copt=-mavx --copt=-msse4.1 --copt=-msse4.2 --copt=-mavx2 --copt=-mfma --copt=-mfpmath=both
+```
 
 Wheels you will most likely need are listed below. Need something or a wheel doesn't work for you? File an issue. (Unfortunately, we won't be able to accommodate for requests for Windows wheels, as we don't have Windows machines ourselves.)
 
