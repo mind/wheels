@@ -35,6 +35,7 @@ TF | Builds
 1.4 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.4-cpu), [CPU Debug](https://github.com/mind/wheels/releases/tag/tf1.4-cpu-debug), [CPU macOS](https://github.com/mind/wheels/releases/tag/tf1.4-cpu-mac), GPU ([CUDA 8](https://github.com/mind/wheels/releases/tag/tf1.4-gpu), [CUDA 9 for Compute 3.7](https://github.com/mind/wheels/releases/tag/tf1.4-gpu-cuda9-37), [CUDA 9 for Compute 3.7/6.0/7.0](https://github.com/mind/wheels/releases/tag/tf1.4-gpu-cuda9), [CUDA 9 generic](https://github.com/mind/wheels/releases/tag/tf1.4-gpu-cuda9-generic), [CUDA 9 without MKL](https://github.com/mind/wheels/releases/tag/tf1.4-gpu-cuda9-nomkl))
 1.4.1 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.4.1-cpu), GPU ([CUDA 8](https://github.com/mind/wheels/releases/tag/tf1.4.1-gpu), [CUDA 9](https://github.com/mind/wheels/releases/tag/tf1.4.1-gpu-cuda9), [CUDA 9.1](https://github.com/mind/wheels/releases/tag/tf1.4.1-gpu-cuda91))
 1.5 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.5-cpu), GPU ([CUDA 9](https://github.com/mind/wheels/releases/tag/tf1.5-gpu), [CUDA 9 without MKL](https://github.com/mind/wheels/releases/tag/tf1.5-gpu-nomkl), [CUDA 9.1](https://github.com/mind/wheels/releases/tag/tf1.5-gpu-cuda91), [CUDA 9.1 without MKL](https://github.com/mind/wheels/releases/tag/tf1.5-gpu-cuda91-nomkl))
+1.6 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.6-cpu), GPU ([CUDA 9.1](https://github.com/mind/wheels/releases/tag/tf1.6-gpu-cuda91), [CUDA 9.1 without MKL](https://github.com/mind/wheels/releases/tag/tf1.6-gpu-cuda91-nomkl))
 
 Please note that your machine needs to have a relatively new Intel CPU (and Nvidia GPU if you use the GPU version) to be compatible with the wheels below. If the hardware is not up-to-date, the wheels will not work.
 
@@ -88,6 +89,18 @@ Version | Python | Arch | Link
 1.4.1 | 2.7 | GPU | https://github.com/mind/wheels/releases/download/tf1.4.1-gpu/tensorflow-1.4.1-cp27-cp27mu-linux_x86_64.whl
 1.4.1 | 3.5 | GPU | https://github.com/mind/wheels/releases/download/tf1.4.1-gpu/tensorflow-1.4.1-cp35-cp35m-linux_x86_64.whl
 1.4.1 | 3.6 | GPU | https://github.com/mind/wheels/releases/download/tf1.4.1-gpu/tensorflow-1.4.1-cp36-cp36m-linux_x86_64.whl
+1.5 | 2.7 | CPU | https://github.com/mind/wheels/releases/download/tf1.5-cpu/tensorflow-1.5.0-cp27-cp27mu-linux_x86_64.whl
+1.5 | 3.5 | CPU | https://github.com/mind/wheels/releases/download/tf1.5-cpu/tensorflow-1.5.0-cp35-cp35m-linux_x86_64.whl
+1.5 | 3.6 | CPU | https://github.com/mind/wheels/releases/download/tf1.5-cpu/tensorflow-1.5.0-cp36-cp36m-linux_x86_64.whl
+1.5 | 2.7 | GPU | https://github.com/mind/wheels/releases/download/tf1.5-gpu/tensorflow-1.5.0-cp27-cp27mu-linux_x86_64.whl
+1.5 | 3.5 | GPU | https://github.com/mind/wheels/releases/download/tf1.5-gpu/tensorflow-1.5.0-cp35-cp35m-linux_x86_64.whl
+1.5 | 3.6 | GPU | https://github.com/mind/wheels/releases/download/tf1.5-gpu/tensorflow-1.5.0-cp36-cp36m-linux_x86_64.whl
+1.6 | 2.7 | CPU | https://github.com/mind/wheels/releases/download/tf1.6-cpu/tensorflow-1.6.0-cp27-cp27mu-linux_x86_64.whl
+1.6 | 3.5 | CPU | https://github.com/mind/wheels/releases/download/tf1.6-cpu/tensorflow-1.6.0-cp35-cp35m-linux_x86_64.whl
+1.6 | 3.6 | CPU | https://github.com/mind/wheels/releases/download/tf1.6-cpu/tensorflow-1.6.0-cp36-cp36m-linux_x86_64.whl
+1.6 | 2.7 | GPU | https://github.com/mind/wheels/releases/download/tf1.6-gpu/tensorflow-1.6.0-cp27-cp27mu-linux_x86_64.whl
+1.6 | 3.5 | GPU | https://github.com/mind/wheels/releases/download/tf1.6-gpu/tensorflow-1.6.0-cp35-cp35m-linux_x86_64.whl
+1.6 | 3.6 | GPU | https://github.com/mind/wheels/releases/download/tf1.6-gpu/tensorflow-1.6.0-cp36-cp36m-linux_x86_64.whl
 
 ## Help!
 
