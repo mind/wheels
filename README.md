@@ -98,9 +98,9 @@ Version | Python | Arch | Link
 1.6 | 2.7 | CPU | https://github.com/mind/wheels/releases/download/tf1.6-cpu/tensorflow-1.6.0-cp27-cp27mu-linux_x86_64.whl
 1.6 | 3.5 | CPU | https://github.com/mind/wheels/releases/download/tf1.6-cpu/tensorflow-1.6.0-cp35-cp35m-linux_x86_64.whl
 1.6 | 3.6 | CPU | https://github.com/mind/wheels/releases/download/tf1.6-cpu/tensorflow-1.6.0-cp36-cp36m-linux_x86_64.whl
-1.6 | 2.7 | GPU | https://github.com/mind/wheels/releases/download/tf1.6-gpu/tensorflow-1.6.0-cp27-cp27mu-linux_x86_64.whl
-1.6 | 3.5 | GPU | https://github.com/mind/wheels/releases/download/tf1.6-gpu/tensorflow-1.6.0-cp35-cp35m-linux_x86_64.whl
-1.6 | 3.6 | GPU | https://github.com/mind/wheels/releases/download/tf1.6-gpu/tensorflow-1.6.0-cp36-cp36m-linux_x86_64.whl
+1.6 | 2.7 | GPU | https://github.com/mind/wheels/releases/download/tf1.6-gpu-cuda91/tensorflow-1.6.0-cp27-cp27mu-linux_x86_64.whl
+1.6 | 3.5 | GPU | https://github.com/mind/wheels/releases/download/tf1.6-gpu-cuda91/tensorflow-1.6.0-cp35-cp35m-linux_x86_64.whl
+1.6 | 3.6 | GPU | https://github.com/mind/wheels/releases/download/tf1.6-gpu-cuda91/tensorflow-1.6.0-cp36-cp36m-linux_x86_64.whl
 
 ## Help!
 
