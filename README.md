@@ -36,6 +36,7 @@ TF | Builds
 1.4.1 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.4.1-cpu), GPU ([CUDA 8](https://github.com/mind/wheels/releases/tag/tf1.4.1-gpu), [CUDA 9](https://github.com/mind/wheels/releases/tag/tf1.4.1-gpu-cuda9), [CUDA 9.1](https://github.com/mind/wheels/releases/tag/tf1.4.1-gpu-cuda91))
 1.5 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.5-cpu), GPU ([CUDA 9](https://github.com/mind/wheels/releases/tag/tf1.5-gpu), [CUDA 9 without MKL](https://github.com/mind/wheels/releases/tag/tf1.5-gpu-nomkl), [CUDA 9.1](https://github.com/mind/wheels/releases/tag/tf1.5-gpu-cuda91), [CUDA 9.1 without MKL](https://github.com/mind/wheels/releases/tag/tf1.5-gpu-cuda91-nomkl))
 1.6 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.6-cpu), GPU ([CUDA 9.1](https://github.com/mind/wheels/releases/tag/tf1.6-gpu-cuda91), [CUDA 9.1 without MKL](https://github.com/mind/wheels/releases/tag/tf1.6-gpu-cuda91-nomkl))
+1.7 | [CPU](https://github.com/mind/wheels/releases/tag/tf1.7-cpu), GPU ([CUDA 9](https://github.com/mind/wheels/releases/tag/tf1.7-gpu-nomkl), [CUDA 9.1, cuDNN 7.1](https://github.com/mind/wheels/releases/tag/tf1.7-gpu-cuda91-nomkl))
 
 Please note that your machine needs to have a relatively new Intel CPU (and Nvidia GPU if you use the GPU version) to be compatible with the wheels below. If the hardware is not up-to-date, the wheels will not work.
 
@@ -117,8 +118,10 @@ TF | CUDA | cuDNN | Compute Capability
 1.4 | 8.0/9.0 | 6.0/7.0 | 3.7, 6.0 (P100), 7.0 (V100)
 1.4.1 | 8.0/9.0/9.1 | 6.0/7.0 | 3.7, 6.0, 7.0
 1.5 | 9.0/9.1 | 7.0 | 3.7, 6.0, 7.0
+1.6 | 9.1 | 7.0 | 3.7, 6.0, 7.0
+1.7 | 9.0/9.1 | 7.0/7.1 | 3.7, 6.0, 7.0
 
-TensorFlow < 1.4 doesn't work with CUDA 9, the current version. Instead of `sudo apt-get install cuda`, you need to do `sudo apt-get install cuda-8-0`. CUDA 8 variants of TensorFlow 1.4 go with cuDNN 6.0, and CUDA 9 variants go with cuDNN 7.0.
+TensorFlow < 1.4 doesn't work with CUDA 9, the current version. Instead of `sudo apt-get install cuda`, you need to do `sudo apt-get install cuda-8-0`. CUDA 8 variants of TensorFlow 1.4 go with cuDNN 6.0, and CUDA 9.x variants go with cuDNN 7.x.
 
 ```sh
 # Install CUDA 8
@@ -158,6 +161,16 @@ Missing `libcupti` library? Install it and add it to your `PATH`.
 ```sh
 sudo apt-get install libcupti-dev
 echo 'export LD_LIBRARY_PATH=/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
+```
+
+### TensorRT
+
+Certain wheels support TensorRT. To install TensorRT, first download it from [Nvidia's website](https://developer.nvidia.com/tensorrt), and then run:
+
+```sh
+sudo dpkg -i nv-tensorrt-repo-ubuntu1604-ga-cuda9.0-trt3.0.4-20180208_1-1_amd64.deb
+sudo apt-get update
+sudo apt-get install tensorrt
 ```
 
 ### MKL
